@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake game - Delich</title>
+    <!-- CSS PART -->
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        #playBoard{
+            background-color: #CCC;
+            width: 100vmin;
+            height: 100vmin;
+            display: grid;
+            grid-template-rows: repeat(21, 1fr);
+            grid-template-columns: repeat(21, 1fr);
+        }
+        .snake{
+            background-color: blue;
+            border: .35vmin solid black;
+        }
+        .food{
+            background-color: red;
+            border: .35vmin solid black;
+        }
+        
+    </style>
+    <script src="update.js" defer type="module"></script>
+</head>
+<body>
+    <div id="playBoard"></div>
+</body>
+</html>
